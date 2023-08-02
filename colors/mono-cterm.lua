@@ -140,11 +140,17 @@ local function apply_theme()
     fg = "white",
   })
   ss({
-    "Boolean", "Character", "Float", "Number", "Constant", "Special",
-    "TSConstant", "TSNumber", "TSFloat",
-    "@constant", "@number", "@boolean", "@float", "@int", "@char",
+    "Boolean", "Character", "Float", "Number",
+    "TSNumber", "TSFloat",
+    "@number", "@boolean", "@float", "@int", "@char",
   }, {
     fg = "magenta"
+  })
+  ss({
+    "Constant", "Special", "TSConstant", "@constant",
+  }, {
+    fg = "white",
+    italic = true,
   })
   ss({
     "String", "StringDelimiter",
