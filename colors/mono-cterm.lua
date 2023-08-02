@@ -241,5 +241,4 @@ local function apply_theme()
   end
 end
 
-theme_mono()
-
+apply_theme()
