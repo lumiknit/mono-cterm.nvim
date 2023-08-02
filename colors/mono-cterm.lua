@@ -150,6 +150,7 @@ local function apply_theme()
     "Constant", "Special", "TSConstant", "@constant",
   }, {
     fg = "white",
+    bold = true,
     italic = true,
   })
   ss({
