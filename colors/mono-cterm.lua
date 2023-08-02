@@ -144,7 +144,7 @@ local function apply_theme()
     "TSNumber", "TSFloat",
     "@number", "@boolean", "@float", "@int", "@char",
   }, {
-    fg = "magenta"
+    fg = "brightwhite",
   })
   ss({
     "Constant", "Special", "TSConstant", "@constant",
@@ -157,10 +157,10 @@ local function apply_theme()
     "TSString",
     "@string",
   }, {
-    fg = "yellow",
+    fg = "brightwhite",
   })
   ss({ "SpecialChar" }, {
-    fg = "brightyellow",
+    fg = "brightwhite",
     bold = true,
   })
   ss({
@@ -168,7 +168,6 @@ local function apply_theme()
     "TSFunction", "TSMethod",
     "@function", "@method"
   }, {
-    fg = "brightwhite",
     italic = true,
   })
   ss({ "Comment", "TSComment", "@comment" }, {
@@ -182,6 +181,7 @@ local function apply_theme()
     "@parameter", "@parameter.reference", "@property", "@field",
     "@identifier", "@variable", "@variable.builtin", "@tag.custom", "@tag.attribute",
   }, {
+    fg = "white",
     italic = true,
   })
   ss({
