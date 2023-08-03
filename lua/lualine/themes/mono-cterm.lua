@@ -2,28 +2,28 @@ local t = require("mono-cterm").get_current_palette()
 
 return {
   inactive = {
-    a = { ctermfg = t["white"].cterm, ctermbg = t["black"].cterm },
-    b = { ctermfg = t["white"].cterm, ctermbg = t["black"].cterm },
-    c = { ctermfg = t["white"].cterm, ctermbg = t["black"].cterm },
-    x = { ctermfg = t["white"].cterm, ctermbg = t["black"].cterm },
-    y = { ctermfg = t["white"].cterm, ctermbg = t["black"].cterm },
-    z = { ctermfg = t["white"].cterm, ctermbg = t["black"].cterm },
+    a = { fg = t["white"].cterm, bg = t["black"].cterm },
+    b = { fg = t["white"].cterm, bg = t["black"].cterm },
+    c = { fg = t["white"].cterm, bg = t["black"].cterm },
+    x = { fg = t["white"].cterm, bg = t["black"].cterm },
+    y = { fg = t["white"].cterm, bg = t["black"].cterm },
+    z = { fg = t["white"].cterm, bg = t["black"].cterm },
   },
   normal = {
-    a = { ctermfg = t["black"].cterm, ctermbg = t["white"].cterm, bold = true },
-    b = { ctermfg = t["brightwhite"].cterm, ctermbg = t["black"].cterm },
-    c = { ctermfg = t["white"].cterm, ctermbg = t["black"].cterm },
-    x = { ctermfg = t["white"].cterm, ctermbg = t["black"].cterm },
-    y = { ctermfg = t["brightwhite"].cterm, ctermbg = t["black"].cterm },
-    z = { ctermfg = t["black"].cterm, ctermbg = t["white"].cterm },
+    a = { fg = t["black"].cterm, bg = t["white"].cterm, bold = true },
+    b = { fg = t["brightwhite"].cterm, bg = t["black"].cterm },
+    c = { fg = t["white"].cterm, bg = t["black"].cterm },
+    x = { fg = t["white"].cterm, bg = t["black"].cterm },
+    y = { fg = t["brightwhite"].cterm, bg = t["black"].cterm },
+    z = { fg = t["black"].cterm, bg = t["white"].cterm },
   },
   insert = {
-    a = { ctermfg = t["black"].cterm, ctermbg = t["brightwhite"].cterm },
+    a = { fg = t["black"].cterm, bg = t["brightwhite"].cterm },
   },
   replace = {
-    a = { ctermfg = t["black"].cterm, ctermbg = t["red"].cterm },
+    a = { fg = t["black"].cterm, bg = t["red"].cterm },
   },
   visual = {
-    a = { ctermfg = t["black"].cterm, ctermbg = t["magenta"].cterm },
+    a = { fg = t["black"].cterm, bg = t["magenta"].cterm },
   }
 }
