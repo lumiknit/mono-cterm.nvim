@@ -22,7 +22,7 @@ return {
   },
   replace = {
     a = { ctermfg = t["black"].cterm, ctermbg = t["red"].cterm },
-  }
+  },
   visual = {
     a = { ctermfg = t["black"].cterm, ctermbg = t["magenta"].cterm },
   }
