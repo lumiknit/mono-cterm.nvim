@@ -125,7 +125,7 @@ local function apply_theme()
     bold = true,
   })
   ss({ "GitGutterChangedelete", "GitSignsChangedelete" }, {
-    fg = "magenta",
+    fg = "yellow",
     bold = true,
   })
   -- Lang

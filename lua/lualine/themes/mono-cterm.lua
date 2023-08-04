@@ -10,7 +10,7 @@ return {
     z = { fg = t["white"].cterm, bg = t["black"].cterm },
   },
   normal = {
-    a = { fg = t["black"].cterm, bg = t["white"].cterm, bold = true },
+    a = { fg = t["black"].cterm, bg = t["white"].cterm, gui = 'bold' },
     b = { fg = t["brightwhite"].cterm, bg = t["brightblack"].cterm },
     c = { fg = t["white"].cterm, bg = t["black"].cterm },
     x = { fg = t["white"].cterm, bg = t["black"].cterm },
