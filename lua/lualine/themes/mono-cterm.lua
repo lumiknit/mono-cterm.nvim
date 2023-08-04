@@ -18,19 +18,19 @@ return {
     z = { fg = t["black"].cterm, bg = t["white"].cterm },
   },
   insert = {
-    a = { fg = t["black"].cterm, bg = t["brightwhite"].cterm },
+    a = { fg = t["black"].cterm, bg = t["brightwhite"].cterm, gui = 'bold' },
     z = { fg = t["black"].cterm, bg = t["brightwhite"].cterm },
   },
   command = {
-    a = { fg = t["black"].cterm, bg = t["brightgreen"].cterm },
+    a = { fg = t["black"].cterm, bg = t["brightgreen"].cterm, gui = 'bold' },
     z = { fg = t["black"].cterm, bg = t["brightgreen"].cterm },
   },
   replace = {
-    a = { fg = t["black"].cterm, bg = t["red"].cterm },
+    a = { fg = t["black"].cterm, bg = t["red"].cterm, gui = 'bold' },
     z = { fg = t["black"].cterm, bg = t["brightred"].cterm },
   },
   visual = {
-    a = { fg = t["black"].cterm, bg = t["magenta"].cterm },
+    a = { fg = t["black"].cterm, bg = t["magenta"].cterm, gui = 'bold' },
     z = { fg = t["black"].cterm, bg = t["brightmagenta"].cterm },
   }
 }
