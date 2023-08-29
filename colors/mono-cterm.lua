@@ -23,7 +23,6 @@ local function apply_theme()
     bold = true,
   })
   ss({ "Italic" }, {
-    fg = "brightblack",
     italic = true,
   })
   ss({ "BoldItalic", "Macro" }, {
