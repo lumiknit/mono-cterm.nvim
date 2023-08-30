@@ -168,7 +168,6 @@ local function apply_theme()
     "TSFunction", "TSMethod",
     "@function", "@method"
   }, {
-    italic = true,
   })
   ss({ "Comment", "TSComment", "@comment" }, {
     fg = "brightblack",
@@ -182,7 +181,6 @@ local function apply_theme()
     "@identifier", "@variable", "@variable.builtin", "@tag.custom", "@tag.attribute",
   }, {
     fg = "white",
-    italic = true,
   })
   ss({
     "Conditional", "Define", "Include", "Keyword",
@@ -202,13 +200,13 @@ local function apply_theme()
     "@type", "@type.builtin", "@tag",
   }, {
     bold = true,
-    italic = true,
   })
   ss({
     "Namespace", "TSNamespace", "@namespace",
   }, {
     fg = "white",
     bold = true,
+    italic = true,
   })
   ss({
     "TSError",
