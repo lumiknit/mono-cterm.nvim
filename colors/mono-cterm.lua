@@ -168,6 +168,7 @@ local function apply_theme()
     "TSFunction", "TSMethod",
     "@function", "@method"
   }, {
+    fg = "none",
   })
   ss({ "Comment", "TSComment", "@comment" }, {
     fg = "brightblack",
@@ -180,7 +181,7 @@ local function apply_theme()
     "@parameter", "@parameter.reference", "@property", "@field",
     "@identifier", "@variable", "@variable.builtin", "@tag.custom", "@tag.attribute",
   }, {
-    fg = "white",
+    fg = "none",
   })
   ss({
     "Conditional", "Define", "Include", "Keyword",
@@ -199,6 +200,7 @@ local function apply_theme()
     "TSType", "TSTypeBuiltin", "TSTag",
     "@type", "@type.builtin", "@tag",
   }, {
+    fg = "none",
     bold = true,
   })
   ss({
@@ -218,7 +220,9 @@ local function apply_theme()
   for _, style in pairs(styles) do
     local opts = {}
     local s = style.style
-    if s.fg ~= nil then
+    if s.fg == "none" then
+      opts.ctermfg = "none"
+    elseif s.fg ~= nil then
       opts.ctermfg = palette[s.fg].cterm
     end
     if s.bg ~= nil then
